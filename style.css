@@ -1,0 +1,984 @@
+/* Body styling */
+body{
+   background: white;
+   color: white;
+   
+}
+
+body, .Contact{
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+   
+}
+
+.break{
+   color: #000000 ;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-color: rgb(255, 255, 255);
+   background-position: center;
+   display: flex;
+   flex-direction: row;
+   font-size: 18px;
+   height: 400px;
+   margin: 40px;
+   text-align: center;
+   
+
+}
+
+.break2{
+   color: rgb(254, 86, 86) ;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 38px;
+   text-align: center;
+   text-decoration: solid;
+   height: 200px;
+   margin: 50px 20px;
+   padding: 50px 50px 0px 50px;
+   
+   
+   
+}
+
+.break hr {
+   border-radius: 50px;
+   background-color: #f44747;
+   width: 5px;
+
+}
+
+.break div{
+   
+   width: 500px;
+   text-align: center;
+   margin: auto;
+   padding: 20px;
+
+}
+
+.break2 img{
+   float: right;
+   width:30%;
+}
+
+.btitle {
+   color: #e82a2a;
+   font-size: 30px;
+   text-align: center;
+
+}
+
+
+/*contact page*/
+.Contact{
+ background: linear-gradient(#fc858f,rgb(241, 87, 87),rgb(247, 79, 53));
+ color: black;
+ 
+ 
+
+}
+
+.contact-container, .contact-container2 {
+   align-items: center;
+   display: flex;
+   height:100vh;
+   justify-content: space-evenly;
+
+}
+
+.contact-container2 h1{
+   color: #e62d2d;
+   font-size: 32px;
+   text-align: center;
+}
+
+.contact-inputs{
+   border: none;
+   border-radius: 10px;
+   color: grey;
+   font-weight: 500;
+   height: 50px;
+   outline: none;
+   padding-left: 25px;
+   width: 500px;
+}
+
+.contact-inputs2 {
+   background-color: #f6b8b8;
+   border:1px  ;
+   border-radius: 10px;
+   color: rgb(48, 47, 47);
+   font-weight: 500;
+   height: 50px;
+   outline: none;
+   padding-left: 25px;
+   width: 650px;
+}
+
+
+.contact-inputs:focus{
+   border: 2px solid rgb(39, 35, 35);
+
+}
+
+.contact-inputs2:focus{
+   border: 2px solid rgb(39, 35, 35);
+
+}
+
+.contact-left{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 20px;
+}
+
+.contact-left2{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 20px;
+}
+
+
+
+.contact-left button{
+   align-items: center;
+   background: linear-gradient(rgb(238, 50, 21),#f83434);
+   border:none;
+   border-radius:50px;
+   color: white;
+   cursor: pointer;
+   display:flex;
+   font-size: 16px;
+   gap:10px;
+   padding: 15px 30px;
+
+}
+
+.contact-left2 button {
+   align-items: center;
+   background: linear-gradient(rgb(238, 50, 21),#f83434);
+   border:none;
+   border-radius:50px;
+   color: white;
+   cursor: pointer;
+   display:flex;
+   font-size: 16px;
+   gap:10px;
+   padding: 15px 30px;
+
+}
+
+.contact-left2 button:hover {
+   transform: scale(0.9);
+   transition: 0.3s ease-out
+}
+
+
+.contact-left textarea,.contact-left2 textarea {
+   border-radius: 20px;
+   height: 140px;
+   padding-top: 15px;
+}
+
+
+
+
+.contact-left-title h2{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 40px;
+   font-weight: 600;
+   color: white;
+   margin-bottom: 5px;
+}
+
+.contact-left-title2 h2{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 40px;
+   font-weight: 600;
+   color: rgb(172, 41, 41);
+   margin-bottom: 5px;
+}
+
+.contact-left-title hr, .contact-left-title2 hr{
+   background-color: rgb(201, 50, 50);
+   border: none;
+   border-radius: 10px;
+   height: 5px; 
+   margin-bottom: 20px;
+   width: 120px;
+   
+}
+
+
+.deep{
+color:rgb(242, 234, 234) ;
+ background-color: #d02207;
+ background-size: 100%;
+ background-image: url(images/Designer\ \(20\).jpeg);
+ background-position: center;
+ background-repeat: no-repeat;
+ border-radius: 20px;
+ border: 10px black;
+ gap: 40px;
+ height: 270px;
+ margin: 50px 100px;
+ padding: 100px 50px 10px 50px ;
+ text-align: center;
+
+}
+
+.features {
+   height: 400px;
+   margin: auto;
+   text-align: center;
+}
+
+
+.features, .features a{
+   display: flex;
+   flex-wrap: wrap;
+}
+/* Features section styling */
+.features a{
+   background-color: white;
+   color: black;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   padding: 20px;
+   text-decoration: none;
+   text-align: center;
+   text-transform: uppercase;
+   margin: auto;
+   
+  
+}
+ 
+/* Features figures and image styling */
+.features figure {
+   background-color: white;
+   
+   width: 200px;
+   text-align: center;
+   position: relative;
+   
+   }
+
+.features figure img {
+   border-radius: 40%;
+   width: 200px;
+   margin:auto
+}
+
+.features figure:hover{
+   transform: scale(0.9);
+   transition: 0.3s ease-out
+
+}
+/*responsive*/
+
+
+/* Header styling */
+
+
+.Home{
+   height: 400px;
+   padding: 20px;
+}
+.Home, .Mission {
+   background: black;
+   background-image: url("images/Mac.png");
+   background-size: 100%;
+   height: 750px;
+   padding: 20px;
+  
+}
+
+
+
+
+.Home a, .misc a, .Home, .other,.Mission , .Mission a {
+ background-position: center;
+ text-align: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.Home a, .misc a, .other a, .Mission a {
+   
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+   margin-top: 40px;
+
+}
+
+header h1 {
+   animation: slideuptext 0.3s ease-in 0s 1;
+   font-size: 50px;
+   margin-top: 150px;
+
+}
+
+header .Logo a, .Logo a, .Mission .Logo a, .Logo a {
+   background-image: url("images/PNXlogo.png");
+   background-size: 300px;
+   
+   display: inline-block;
+   height: 120px;
+   position: relative;
+   text-indent: -9999999999px;
+   top: -60px;
+   width: 300px;
+}
+
+.mobile2 {
+   background-image: url("images/PNXlogo.png");
+   background-size: 300px;
+   background-repeat: no-repeat;
+   display: none;
+   height: 120px;
+   position: relative;
+   text-indent: -9999999999px;
+   top: -60px;
+   width: 300px;
+}
+
+
+
+
+
+
+
+
+.hr{
+   border-radius: 50px;
+   background-color: #f83434;
+   height:5px;
+   width: 300px;
+   
+}
+
+.how {
+   margin: 50px;
+}
+
+.how h1 {
+   color: #e62d2d;
+   font-size: 48px;
+   text-align: center;
+}
+
+.how h2 {
+   color: black;
+   font-size: 22px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   text-align: center;
+}
+
+.Information, .info2 {
+   background-color:white;
+   background-size: 100%;
+   background-position: center;
+   color: rgb(220, 40, 40);
+   display: flex;
+   flex-direction: row;
+   height: 300px;
+   padding: 20px;
+   position: relative;
+   list-style-type: none;
+
+  
+}
+
+.Information div, .info2 div{
+  margin: auto;
+  text-align: center;
+}
+.Information div h1, .info2 div h1{
+   color: rgb(216, 41, 41);
+   width: 450px;
+   font-size: 60px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Information div h2, .info2 div h2{
+   color: black;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 19px;
+   width: 700px;
+}
+/* Keyframe for header text animation */
+@keyframes slideuptext {
+   from {
+       transform: translateY(50px);
+   }
+
+   to {
+       transform: translateX(0);
+   }
+}
+
+@media (max-width:850px) {
+   .contact-inputs{
+      width: 80vw;
+   }
+   .contact-right{
+      display: none;
+   }
+   .misc{
+      display: none;
+   }
+
+   .contact-inputs2{
+      width: 80vw;
+   }
+   .contact-right2{
+      display: none;
+   }
+
+}
+ 
+
+
+
+/* Navigation styles */
+ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   
+}
+
+li{
+   display: inline-block;
+   list-style-type: none;
+   margin: 20px;
+
+}
+
+.misc{
+   color: black;
+   text-align: center;
+   background-size: 100%;
+   height: 50px;
+   padding: 20px;
+  
+
+}
+
+.Mis{
+   background-color: #82366d;
+   font-family: sans-serif;
+   margin: 0;
+   
+  
+
+}
+
+.Mission{
+background-repeat: no-repeat;
+background-size: 100%;
+height: 300px;
+
+}
+
+.mobile {
+   display: none;
+
+}
+
+.more{
+   background-color: #f75d15;
+   background-image: url(images/Designer\ \(9\).jpeg);
+   background-position: center;
+   background-size: 100%;
+   border-radius: 30px;
+   text-align: center;
+   margin: 50px;
+   padding: 100px 100px 30px 100px;
+}
+
+.more, .Quote{
+   background-color: #e62d2d;
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+   height: 200px;
+  
+  
+
+}
+
+.more button{
+   background: linear-gradient(rgb(251, 89, 64),#f38a40);
+
+}
+.more button, .Quote button{
+   align-items: center;
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   font-size: 16px;
+   padding: 15px 30px;
+}
+
+
+
+nav{
+   border-radius: 60px;  
+   
+}
+
+nav p:hover{
+   transform: translateY(-5px);
+   transition: 0.3s ease 0s;
+}
+
+
+.other{
+   background-color: #161616;
+   
+   background-size: 100%;
+   border-radius: 20px;
+   height: 140px;
+   margin: 20px 175px 0px 175px;
+
+}
+
+.other h1{
+   background-color: #e62d2d;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 50px;}
+
+
+.other .Logo a {
+   top: -73px;
+   
+}
+
+.price {
+   color: #ffffff;
+   display: flex;
+   margin: 30px;
+   
+
+}
+  
+.price div {
+   border-radius: 10px;
+   margin: auto;
+   padding-top: 40px;
+   background-color: #000000;
+   width: 400px;
+   height: 500px;
+   flex-direction: row;
+
+   
+}
+
+
+.price li {
+   display: flex;
+}
+
+ .price h1, .price h2{
+   text-align: center;
+
+
+ }
+.Quote {
+   background-color: #f75d15;
+   height: 250px;
+   padding:100px 10px 20px 10px;
+
+}
+
+.Quote button{
+   background: linear-gradient(rgb(238, 50, 21),#f83434);
+   
+
+}
+
+.Quote button a, .more a {
+   color: white;
+   text-decoration: none;
+}
+
+.Quote button:hover, .more button:hover{
+   transform: scale(0.9);
+   transition: 0.3s ease-out
+
+
+}
+.services {
+   
+   color: white;
+   text-align: center;
+   flex-direction: column;
+   
+   
+}
+ 
+
+.services2{
+   color: white;
+   text-align: center;
+   flex-direction: column;
+}
+
+.service-hr{
+   background-color: #f75d15;
+   border-color: #f75d15;
+   border-radius: 50px;
+   height: 5px;
+   
+   width: 500px;
+}
+
+
+.services li {
+   
+   background:linear-gradient(rgb(246, 61, 61),rgb(245, 44, 44));
+   border-radius: 20px;
+   flex-direction: row;
+   margin: 50px;
+   padding: 50px;
+   color: white;
+   
+}
+
+.services2 li{
+   background-image: url(images/Designer\ \(16\).jpeg);
+   background-position: center;
+   background-size: 100%;
+   border-radius: 20px;
+   flex-direction: row;
+   margin: 50px;
+   padding: 50px;
+   color: white;
+}
+
+.services li h1 {
+   font-size: 40px;
+   color: white;
+   ;
+}
+
+.services2 li h1{
+   font-size: 40px;
+   color: white;
+}
+
+.services li h2 {
+   font-size: 20px;
+}
+
+.services2 li h2{
+   font-size: 20px;
+}
+
+.services a{
+   color: white;
+}
+
+.services2 a{
+   color: #ffffff;
+}
+.services a:hover {
+   text-decoration: underline;
+}
+
+.services2 a:hover {
+   text-decoration: underline;
+}
+
+
+
+
+.statement{
+   
+   color: #f1e3e3;
+   display: flex;
+   flex-direction: row;
+   
+   padding:70px 70px 150px 100px;
+   position: relative;
+   width: 600px;
+}
+
+.statement div {
+   display: flex;
+}
+
+
+.statement h1 {
+   font-size: 30px;
+   color: #ffffff;
+}
+
+.statement h2{
+   font-size: 17px;
+   color: rgb(245, 238, 238);
+}
+
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   padding: 40px;
+   height: 300px;
+}
+
+.wrapper img {
+    height: 250px;
+    border-radius: 20px;
+   
+
+}
+
+.wrapper p {
+   margin-right: 30px;
+}
+
+/* Footer styling */
+footer {
+   background: rgb(26, 26, 26);
+   color: rgb(255, 255, 255);
+   display: flex;
+   flex-direction:row;
+   font-size: 12px;
+   gap: 20px;
+   padding: 10px 20px;
+   
+}
+
+footer a {
+   color: rgb(255, 255, 255);
+   font-size: 11px;
+   text-decoration: none;
+   letter-spacing: 3px;
+   
+  
+   
+}
+
+footer div{
+   display: flex;
+   margin: auto;
+}
+
+
+
+
+
+/*Reponsive rules*/
+
+
+
+@media screen and (max-width: 850px) {
+ 
+   header h1{
+      font-size: 32px;
+      margin-top: auto;
+   }
+   header .mobile {
+      display: inline-block;
+   }
+   header p {
+      margin-top: 5px;
+      font-size: 14px;
+   }
+   header .desktop {
+      display: none;
+   }
+   .Home, .other, .Mission{
+      height: 350px;
+   }
+
+  
+
+   .Information div{
+      display: flex;
+      margin:2px;
+      flex-direction: column;
+   }
+   .mobile2 {
+      display: inline-block;
+      background-size: 200px;
+      background-position: left;
+      margin: 0px;
+      }
+
+   .Logo{
+      display: none;
+      
+   }
+}
+
+
+
+@media screen and (max-width:800px){
+   header p{
+      font-size: 13px;
+   }
+    
+}
+
+@media screen and (max-width:760px){
+   header p{
+      font-size: 12px;
+     
+   }
+   header p {
+      margin: -5px; 
+      font-family:Arial, Helvetica, sans-serif;
+   }
+  
+   .Home, .Mission, .other {
+      height: 300px;
+   }
+   .mobile2{
+      display: inline-block;
+      background-size: 150px;
+      background-position: left;
+      margin: 0px;
+   }
+}
+
+@media screen and (max-width:700px){
+   header p{
+      font-size: 10px;
+      font-family:Arial, Helvetica, sans-serif;
+      word-spacing: 1px;
+
+   }
+   header li{
+      margin-right:12px;
+   }
+
+   h1 {
+      font-size: 109px;
+   }
+   .mobile2 {
+      display: inline-block;
+      background-size: 150px;
+      background-position: left;
+      margin: 0px;
+   }
+
+
+
+}
+ 
+@media screen and (max-width:650px){
+   header p{
+      font-size: 9px;
+      background-position: top;
+      top:3px;
+      
+      
+   }
+   header li {
+      margin: 7px;
+   }
+
+   header h1 {
+      font-size: 18px;
+   }
+   .Home{
+      height: 250px;
+   }
+
+   .Logo{
+      display:none ;
+      background-position: left;
+   }
+   
+   .mobile2 {
+     background-size: 100px;
+   }
+   .more h1{
+      margin-top: 0px;
+   }
+}
+
+@media screen and (max-width:600px){
+   header p{
+      font-size: 7px;
+      background-position: top;
+      top:3px;
+      
+   }
+
+   header h1 {
+      font-size: 15px;
+   }
+
+   
+   .Home{
+      height: 250px;
+   }
+
+   .Logo{
+      display:none ;
+      background-position: left;
+   }
+   
+   .mobile2 {
+     background-size: 100px;
+   }
+
+   
+}
+
+
+
+
+
+@media screen and (max-width:550px)  {
+
+   .footer{
+      font-size: 3px;
+   }
+
+   header p{
+      font-size: 5px;
+      background-position: top;
+      text-align: center;
+   }
+   
+   .Home{
+      height: 250px;
+   }
+
+   .Logo{
+      display:none ;
+      
+   }
+
+   .mobile2 {
+      background-size: 70px;
+   }
+   .more a{
+   
+   }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
