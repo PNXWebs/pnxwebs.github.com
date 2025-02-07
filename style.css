@@ -416,7 +416,7 @@ header .Logo a, .Logo a, .Mission .Logo a, .Logo a, .mobile2{
 .Information div, .info2 div{
   margin: auto;
   text-align: center;
-  display: flex;
+  
   width: auto;
 }
 .Information div h1, .info2 div h1{
@@ -556,7 +556,7 @@ nav{
    
 }
 nav li{
-   margin: 40px;
+   margin: clamp(0.125rem, -1.602rem + 6.909vw, 2.5rem);
 }
 
 nav p:hover{
@@ -832,7 +832,7 @@ footer div{
    }
    .mobile2 {
       display: inline-block;
-      background-size: 100px;
+      background-size: clamp(3.125rem, -0.511rem + 14.545vw, 8.125rem);
       background-position: left;
       margin: 0px;
       }
@@ -841,8 +841,32 @@ footer div{
       display: none;
       
    }
+   .nav li{
+      margin:10px;
+   }
 }
 
+@media screen and (max-width:860px){
+   .Information{
+      display:flow-root;
+   }
+   .info2{
+      padding:10%;
+   }
+   .info2 h1{
+      display:none;
+
+   }
+}
+@media screen and (max-width:660px){
+   .features{
+      display: none;
+   }
+   nav li{
+      font-size: clamp(0.25rem, -0.038rem + 1.154vw, 0.438rem);
+   }
+}
+@media screen and (max-width:660px)
 
 
 
