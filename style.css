@@ -814,6 +814,7 @@ footer div{
    }
    header p {
       margin-top: 5px;
+      margin-right:auto;
       
    }
    header .desktop {
@@ -832,7 +833,7 @@ footer div{
    }
    .mobile2 {
       display: inline-block;
-      background-size: clamp(3.125rem, -0.511rem + 14.545vw, 8.125rem);
+      background-size: clamp(4.375rem, -8.125rem + 50vw, 12.5rem);
       background-position: left;
       margin: 0px;
       }
@@ -867,7 +868,6 @@ footer div{
    }
 }
 @media screen and (max-width:660px)
-
 
 
 
