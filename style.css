@@ -1,4 +1,12 @@
 /* Body styling */
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0; 
+}
+
+
+
 body{
    background: white;
    color: white;
@@ -70,7 +78,12 @@ body, .Contact{
 
 }
 
+#check {display: none;}
 
+.close-menu {
+   top: 20px;
+   right: 20px;
+}
 /*contact page*/
 .Contact{
  background: linear-gradient(#fc858f,rgb(241, 87, 87),rgb(247, 79, 53));
@@ -286,15 +299,14 @@ color:rgb(242, 234, 234) ;
 
 
 .Home{
-   height: 400px;
-   padding: 20px;
+   
 }
 .Home, .Mission {
    background: black;
    background-image: url("images/Mac.png");
    background-size: 100%;
    height: 750px;
-   padding: 20px;
+
    
   
 }
@@ -317,52 +329,23 @@ color:rgb(242, 234, 234) ;
    color: white;
    text-decoration: none;
    text-transform: uppercase;
-   margin-top: 40px;
+  
    
 
 }
 
 header h1 {
    animation: slideuptext 0.3s ease-in 0s 1;
-   font-size: clamp(0.125rem, -1.798rem + 8.205vw, 3.125rem);
-   margin-top: 150px;
+   font-size:40px;
+   margin-top:250px;
 
 }
 
 
-header li {
-   margin: clamp(0.063rem, -0.298rem + 1.538vw, 0.625rem);
-}
- 
-/*logo styling*/
-header .Logo a, .Logo a, .Mission .Logo a, .Logo a {
-   background-image: url("images/PNXlogo.png");
-   background-size: 300px;
-   background-repeat: no-repeat;
-   display: inline-block;
-   height: 120px;
-   position: relative;
-   text-indent: -9999999999px;
-   top: -60px;
-   width: 300px;
-}
 
 
-header .Logo a, .Logo a, .Mission .Logo a, .Logo a, .mobile2{
 
-}
 
-.mobile2 {
-   background-image: url("images/PNXlogo.png");
-   background-size:0px;
-   background-repeat: no-repeat;
-   display: none;
-   height: 120px;
-   position: relative;
-   text-indent: -9999999999px;
-   top: -60px;
-   width: 300px;
-}
 
 
 
@@ -465,22 +448,34 @@ header .Logo a, .Logo a, .Mission .Logo a, .Logo a, .mobile2{
 }
  
 
-
+/*logo styles*/
+.logo img{width:clamp(4.375rem, 2.933rem + 5.769vw, 8.125rem);}
 
 /* Navigation styles */
-ul {
-   margin: 0;
-   padding: 0;
-   list-style-type: none;
-   
-}
 
-li{
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
    display: inline-block;
-   list-style-type: none;
-   margin: 20px;
-
+   text-decoration: none;
+   color: white;
+   text-align: center;
+   transition: 0.15s ease-in-out;
+   position: relative;
+   text-transform: uppercase;
 }
+
+.menu li a::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 0;
+   height: 1px;
+   background-color: white;
+   transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
 
 .misc{
    color: black;
@@ -508,10 +503,7 @@ height: 300px;
 
 }
 
-.mobile {
-   display: none;
 
-}
 
 .more{
    background-color: #f75d15;
@@ -550,20 +542,41 @@ height: 300px;
 }
 
 
+nav {
+   background-color:rgb(0, 0, 0);
+}
 
-nav{
-   border-radius: 60px;  
-   
-}
-nav li{
-   margin: clamp(0.125rem, -1.602rem + 6.909vw, 2.5rem);
-}
 
 nav p:hover{
    transform: translateY(-5px);
    transition: 0.3s ease 0s;
 }
 
+
+.nav-bar{
+   width:100%;
+   background-color: #000000;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   list-style: none;
+   position:relative;
+   background-color: var(--color2);
+   padding: 12px 20px;
+}
+.open-menu , .close-menu{
+   position:absolute;
+   color: #ffffff;
+   cursor: pointer;
+   font-size: 1.5rem;
+   display: none;
+}
+
+.open-menu{
+   top: 50%;
+   right: 20px;
+   transform: translateY(-50%);
+}
 
 .other{
    background-color: #161616;
@@ -771,13 +784,16 @@ nav p:hover{
 
 /* Footer styling */
 footer {
-   background: rgb(26, 26, 26);
+   background: rgb(0, 0, 0);
    color: rgb(255, 255, 255);
    display: flex;
    flex-direction:row;
    font-size: 12px;
    gap: 20px;
-   padding: 10px 20px;
+   padding: 30px;
+   list-style: none;
+   max-width: 100%;
+   height: auto;
    
 }
 
@@ -802,77 +818,27 @@ footer div{
 
 /*Reponsive rules*/
 
-
-@media screen and (max-width: 950px) {
- 
-   header h1{
-      font-size: 32px;
-      margin-top: auto;
-   }
-   header .mobile {
-      display: inline-block;
-   }
-   header p {
-      margin-top: 5px;
-      margin-right:auto;
-      
-   }
-   header .desktop {
-      display: none;
-   }
-   .Home, .other, .Mission{
-      height: 350px;
-   }
-
-  
-
-   .Information div{
-      display: flex;
-      margin:2px;
+@media (max-width: 610px) {
+   .menu{
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height:100vh;
+      position: fixed;
+      top: 0;
+      right:-100%;
+      z-index: 100;
+      background-color:#161616;
+      transition: all 0.2s ease-in-out;
    }
-   .mobile2 {
-      display: inline-block;
-      background-size: clamp(4.375rem, -8.125rem + 50vw, 12.5rem);
-      background-position: left;
-      margin: 0px;
-      }
+   .menu li{margin-top:40px;}
+   .menu li a{padding: 10px;}
+   .open-menu , .close-menu {display:block;}
+   #check:checked~.menu{right:0;}
+   header{height:100px;}
 
-   .Logo{
-      display: none;
-      
-   }
-   .nav li{
-      margin:10px;
-   }
 }
-
-@media screen and (max-width:860px){
-   .Information{
-      display:flow-root;
-   }
-   .info2{
-      padding:10%;
-   }
-   .info2 h1{
-      display:none;
-
-   }
-}
-@media screen and (max-width:660px){
-   .features{
-      display: none;
-   }
-   nav li{
-      font-size: clamp(0.25rem, -0.038rem + 1.154vw, 0.438rem);
-   }
-}
-@media screen and (max-width:660px)
-
-
-
-
-
 
 
 
